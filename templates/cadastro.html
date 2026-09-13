@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tadaieski Tec</title>
+</head>
+<body>
+    <div class="titulo">
+    <h1>Cadastro</h1>
+    </div>
+    
+     <form action="/finalizar" method="post">
+        <p>
+            <label for="nome">Nome/Empresa:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </p>
+
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+            <label for="servicos">Serviço:</label>
+            <input type="text" id="servicos" name="servicos" value="{{ servicos }}" required>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
+
+<style>
+body{
+        background-image: url('/static/fundo.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+
+    }
+form{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin-bottom: 100px;
+    margin-top: 250px;
+    border: 5px orange solid;
+    border-radius: 10px;
+    
+
+
+}
+.titulo{
+        
+        font-size: 25px;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        text-decoration: none;
+        margin-bottom: 50px;
+    
+    }
+    @media (max-width: 768px) {
+        form {
+            font-size: 1.0em;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+            position: static; /* remove absolute */
+        }
+    }
+
+</style>

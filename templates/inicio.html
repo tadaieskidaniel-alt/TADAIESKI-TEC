@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tadaieski Tec</title>
+</head>
+<body>
+    <div class="logo">
+    <img src="/static/logo.png">
+    </div>
+    <div class="recepição">
+    </div>
+    <div class="pregunta1">
+    <p>Quem somos?</p>
+     </div>
+     <div class="resposta1">       
+    Somos uma equipe de especialistas em desenvolvimento de sistemas e análise de dados
+
+
+</div>
+
+<div class="pregunta2">
+    <p>Como funcionam nossos serviços?</p>
+</div>
+<div class="resposta2">
+
+
+
+    Oferecemos soluções personalizadas para atender as necessidades de nossos clientes,
+    garantindo qualidade e eficiência em cada etapa do seu projeto!
+</div>
+    
+    
+
+    
+    <div class="menu">
+    <a href='{{ url_for('servicos') }}' class="btn">Serviços</a>
+
+    
+    </div>
+    
+
+</body>
+</html>
+ <style>
+ 
+    .recepição{
+        text-align: center;
+        height: 50px;
+        font-size: 50px;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        color:white;
+    }
+    .pregunta1, .pregunta2{
+        text-align: center;
+        padding: 50px;
+        height: 50px;
+        font-size: 50px;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        color: orange;
+    }
+    .resposta1, .resposta2{
+
+        border: 5px orange solid;
+        
+        border-radius: 10px;
+
+        text-align: center;
+        padding: 60px;
+        height: 50px;
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        color: white;
+    }
+   
+    
+    body{
+        background-image: url('/static/fundo.png');
+        background-size: cover;
+        text-align: center;
+    }
+    .logo{
+       
+        align-items: center;
+
+        text-align: center;
+        padding: 20px;
+        max-whidth: 20px;
+        height: auto;
+
+        
+    }
+    a{
+        text-decoration: none;
+        border: 5px orange solid;
+        background-color: orange;
+        border-radius: 10px;
+        color: black;
+        padding: 10px;
+        margin: 10px;
+        
+    }
+    a:hover{
+        background-color: black;
+        color: orange;
+    }
+    .menu{
+        text-align: center;
+       
+        padding: 50px;
+        height: 50px;
+        font-size: 50px;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        ;
+    }
+@media (max-width: 768px) {
+  .pregunta1, .pregunta2 {
+    font-size: 1.5em;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    position: static; /* remove absolute */
+  }
+
+  .resposta1, .resposta2 {
+    font-size: 1em;
+    padding: 25px;
+    margin: 30px auto;
+    text-align: center;
+    position: static; /* remove absolute */
+    border: 2px solid orange;
+    border-radius: 10px;
+  }
+
+  .logo img {
+    max-width: 250px; /* logo menor no celular */
+    height: auto; /* mantém a proporção da imagem px;
+  }
+
+  .menu {
+    font-size: 1em;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    position: static; /* remove absolute */
+  }
+}       
+
+ </style>

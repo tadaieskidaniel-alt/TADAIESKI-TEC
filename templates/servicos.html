@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+</head>
+<body>
+    <div class="titulo">
+    <h1>Serviços</h1>
+    </div>
+    <p>
+        <div class="criação de sites">
+        <a href='{{ url_for('cadastro', servicos="Criação de sites") }}' class="btn">Criação de sites</a> </p>
+        <h2>Criação de sites em varios nichos(nutrição, pet, barbearia, etc)</h2>
+        </div>
+
+        <div class="criação de sistemas intranet">
+        <p><a href='{{ url_for('cadastro', servicos="Desenvolvimento de sistemas intranet") }}' class="btn">Desenvolvimento de sintemas intranet</a></p>
+        <h2>Desenvolvimentos de sistemas intranet para empresas e pessoal (controle de estoque, financeiro, produtividade, etc)</h2>
+        </div>
+
+        <div class="analise de dados">
+        <p><a href='{{ url_for('cadastro', servicos="Analise de dados") }}' class="btn">Analise de dados</a></p>
+        <h2>Analise de dados com python e Power BI(Criação de dashboards e relatórios)</h2>
+        </div>
+
+        <div class="assistência tecnica remota">
+        <p><a href='{{ url_for('cadastro', servicos="Assistência tecnica remota") }}' class="btn">Assistencia tecnica remota</a></p>
+        <h2>Assistencia tecnica remota para empresas e pessoal</h2>
+        </div>
+
+
+        <div class="T.i">
+        <p><a href='{{ url_for('cadastro', servicos="T.i") }}' class="btn">T.i</a></p>
+        <h2>T.i para empresas e pessoal</h2>
+        </div>
+
+        <div class="Outros">
+        <p><a href='{{ url_for('cadastro', servicos="saber mais") }}' class="btn">saber mais</a></p>
+        </div>   
+
+
+</body>
+</html>
+<style>
+    h2{
+        text-align: center;
+        padding: 20px;
+        height: 20px;
+        font-size: 17px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        margin-bottom: 50px;
+        margin-top: 10px;
+    }
+    .titulo{
+        
+        font-size: 25px;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        text-decoration: none;
+        margin-bottom: 50px;
+    
+    }
+    .btn{
+        text-align: center;
+        padding: 20px;
+        height: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        color: orange;
+        border: 5px orange solid;
+        border-radius: 5px;
+    }
+    .btn:hover{
+        background-color: black;
+        color: orange;
+    }
+   body{
+        background-image: url('/static/fundo.png');
+        background-size: cover;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+       
+    }
+    </style>
