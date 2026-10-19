@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
     <title>Serviços</title>
 </head>
 <body>
-    <div class="titulo">
+   <div class="logo">
+    <img src={{ url_for('static', filename='logo3.png') }}
+    </div>
+    
+    
+    
+
+     <div class="titulo">
     <h1>Serviços</h1>
     </div>
     <p>
@@ -73,8 +84,8 @@
         font-weight: bold;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-decoration: none;
-        color: orange;
-        border: 5px orange solid;
+        color: white;
+        border: 5px blue solid;
         border-radius: 5px;
     }
     .btn:hover{
@@ -88,5 +99,15 @@
         margin: 0;
         padding: 0;
        
+    }
+    .logo{
+       
+        align-items: center;
+
+        text-align: center;
+        padding: 20px;
+        max-whidth: 20px;
+        height: auto;
+        margin: auto;
     }
     </style>
